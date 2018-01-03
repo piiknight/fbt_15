@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :users, except: %i{index destroy}
   resources :tours, only: :show
   resources :bookingtours, only: %i{show create}
+  resources :history_bookings, only: :index
 
   namespace :admin do
     resources :tours, except: :show

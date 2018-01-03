@@ -17,3 +17,4 @@ category:
 stt: 0
 Bookingtour:
   quantity: 20
+  state_considering: "considering"
