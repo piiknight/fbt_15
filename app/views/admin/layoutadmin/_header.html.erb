@@ -1,0 +1,24 @@
+<div class="header">
+  <div class="header_left">
+    <%= image_tag "booking.jpg", class: "booking_img" %>
+    <h4><%= t "title" %></h4>
+  </div>
+  <div class="header_right">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <%= t "admin.menu.info_user.account" %><b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><%= t "admin.menu.info_user.title_logout" %></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

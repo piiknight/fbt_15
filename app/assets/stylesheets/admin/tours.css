@@ -1,0 +1,157 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.col-md-2.home {
+  background: black;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.col-md-2.home a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu ul li {
+  height: 50px;
+  background: #484848;
+  width: 100%;
+  line-height: 50px;
+  padding-left: 19px;
+  transition: 0.4s;
+}
+
+.menu ul li:hover {
+  background: #132535;
+  border-left: 8px solid white;
+}
+
+.menu ul li a {
+  color: #cdffff;
+  text-decoration: none;
+}
+
+.infouser ul {
+  width: 100%;
+  height: 100px;
+}
+
+.name_user {
+  width: 70%;
+  float: left;
+  padding-top: 16px;
+}
+
+.name_user p {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.name_user p a {
+  color: black;
+  text-decoration: none;
+}
+
+.infouser {
+  padding: 10px 0px;
+  height: 90px;
+  line-height: 90px;
+  margin-bottom: 30px;
+}
+
+.imguser {
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+.imguser img{
+  width: 70%;
+}
+.action .foot {
+  width: 80%;
+  border-top: 2xp solid white;
+  border-top: 6px dotted #bdbdbd;
+  margin-top: 20px;
+  padding: 20px 0px;
+}
+
+.row.item {
+  width: 95%;
+  height: 124px;
+  background: #26d2c275;
+  border-radius: 27px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+  box-sizing: content-box;
+}
+
+.item:hover a {
+  color: white;
+  text-shadow: 1px 1px 1px red;
+}
+
+.item:hover img {
+  border: 5px solid white;
+}
+
+.item:hover {
+  box-shadow: 1px 2px 7px -1px #0e0e0d;
+  background: #0c7d73;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.action {
+  width: 80%;
+  float: left;
+  height: 750px;
+  padding: 30px;
+  background: #f3f7e6de;
+}
+
+.menu {
+  width: 20%;
+  float: left;
+  height: 750px;
+  background: #293f54;
+}
+.header {
+  height: 50px;
+}
+.header .header_left {
+  width: 20%;
+  float: left;
+  border-right: 1px solid #e8e8e8;
+  padding: 0px;
+  background: #f5f8e9;
+  color: #00a4ce;
+  text-transform: uppercase;x;
+}
+.header_left .booking_img {
+  width: 20%;
+  height: 50px;
+  float: left;
+}
+.header_left h4 {
+  width: 80%;
+  float: left;
+  padding-left: 20px;
+  line-height: 29px;
+}
+.header .header_right {
+  width: 80%;
+  float: left;
+  height: 50px;
+}
+form.navbar-form.navbar-left {
+  margin-top: 0px;
+}
