@@ -17,6 +17,8 @@ gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 gem "faker", "~> 1.6", ">= 1.6.3"
 gem "kaminari"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
 gem "bootstrap4-kaminari-views"
 gem "rubocop", "~> 0.51.0", require: false
 gem "coffee-rails", "~> 4.2"

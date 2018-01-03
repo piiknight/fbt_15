@@ -1,0 +1,14 @@
+<tr>
+  <td><%= increase_stt(params[:page], Settings.per_page_admin, @stt) %></td>
+  <td><%= tour.name %></td>
+  <td><%= tour.address %></td>
+  <td><%= tour.price %></td>
+  <td><%= tour.time_from %></td>
+  <td><%= tour.time_to %></td>
+  <td><%= tour.tour_info %></td>
+  <td><%= image_tag tour.image, class: "img-thumbnail" %></td>
+  <td><%= tour.category.address %></td>
+  <td><%= link_to t("admin.tour.edit"), edit_admin_tour_path(tour) %></td>
+  <td><%= link_to t("admin.tour.delete"), admin_tour_path(tour), method: :delete,
+    data:{confirm: t("admin.tour.confirm_dele")} %></td>
+</tr>

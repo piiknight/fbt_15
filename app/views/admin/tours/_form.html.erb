@@ -1,0 +1,20 @@
+<%= form_for [:admin, @tour], html: {multipart: true} do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+  <%= f.label :time_from %>
+  <%= f.datetime_field :time_from %>
+  <%= f.label :time_to %>
+  <%= f.datetime_field :time_to %>
+  <%= f.label :info %>
+  <%= f.text_area :tour_info %>
+  <%= f.label :category_id %>
+  <%= f.select(:category_id, category_for_select, prompt: t("form.prompt"))%>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <%= f.submit class: "btn btn-info create" %>
+<% end %>
