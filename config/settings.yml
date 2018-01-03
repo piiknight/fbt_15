@@ -8,7 +8,9 @@ User:
   address_length_min: 5
   password_length_min: 6
   is_remember_pass: "1"
+max_size_img: 5
 tour:
   address_length_max: 200
+category:
+  address_length_max: 200
 stt: 0
-max_size_img: 5

@@ -173,6 +173,7 @@ table.table.table-hover thead tr td {
   padding: 20px 30px;
   background: #ffffff;
   border-radius: 20px;
+  overflow: hidden;
 }
 .form_creat form label {
   margin-top: 10px;
@@ -193,7 +194,9 @@ table.table.table-hover thead tr td {
   text-transform: uppercase;
   padding: 8px 20px;
   float: right;
+  margin-top: 20px;
 }
 .img-thumbnail {
   height: 100px !important;
+  width: 300px !important;
 }
