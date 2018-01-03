@@ -8,7 +8,7 @@ class CreateTours < ActiveRecord::Migration[5.1]
       t.datetime :time_from
       t.text :tour_info
       t.string :image
-      t.references :categories, foreign_key: true
+      t.references :category, foreign_key: true
 
       t.timestamps
     end

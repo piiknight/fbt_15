@@ -1,0 +1,28 @@
+<div class="col-md-4">
+  <div class="tour_item">
+    <div class="image">
+      <%= image_tag(tour.image, class: "tour_img") %>
+    </div>
+    <div class="tour_info">
+      <p class="name_tour"><%= tour.name %></p>
+      <p>
+        <span><%= t "static_pages.tours.p_address" %></span>
+        <%= tour.address %>
+      </p>
+      <p>
+        <span><%= t "static_pages.tours.p_time_from" %></span>
+        <%= tour.time_from %>
+      </p>
+      <p>
+        <span><%= t "static_pages.tours.p_time_to" %></span>
+        <%= tour.time_to %>
+      </p>
+      <hr>
+      <p class="price"><%= number_to_currency(tour.price,
+        unit: t("static_pages.tours.price"), format: "%n %u") %></p>
+      <div class="btn-detail">
+        <%= link_to t("static_pages.tours.btn_detail"), "#" %>
+      </div>
+    </div>
+  </div>
+</div>

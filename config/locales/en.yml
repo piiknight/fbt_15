@@ -16,6 +16,11 @@ en:
     tours:
       title: "Tours"
       cat: "CATALOGUE"
+      btn_detail: "Detail"
+      p_address: "Address: "
+      p_time_from: "Time start: "
+      p_time_to: "Time end: "
+      price: "VNĐ"
     login:
       title: "Log in"
   layouts:

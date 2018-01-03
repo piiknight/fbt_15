@@ -12,15 +12,9 @@
 <div id="gallery" class="gallery">
   <div class="container">
     <h3 class="title-w3-agile"><%= t "static_pages.tours.cat" %></h3>
-  </div>
-</div>
-<div id="gallery" class="gallery">
-  <div class="container">
-    <h3 class="title-w3-agile"><%= t "static_pages.tours.cat" %></h3>
-  </div>
-</div>
-<div id="gallery" class="gallery">
-  <div class="container">
-    <h3 class="title-w3-agile"><%= t "static_pages.tours.cat" %></h3>
+    <div class="row">
+      <%= render @tours %>
+    </div>
+    <%= paginate @tours, theme: "twitter-bootstrap-4" %>
   </div>
 </div>
