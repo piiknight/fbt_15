@@ -1,0 +1,32 @@
+<div class="agileits-banner">
+  <div class="bnr-agileinfo">
+    <div class="top-nav w3-agiletop">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="w3menu navbar-right">
+            <ul class="nav navbar">
+              <li><%= link_to t("static_pages.home.title"), home_path %></li>
+              <li><%= link_to t("static_pages.about.title"), about_path %></li>
+              <li><%= link_to t("static_pages.tours.title"), tours_path %></li>
+              <li><%= link_to t("static_pages.login.title") %></li>
+            </ul>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-w3text">
+      <div class="container">
+        <div class="w3l-agile">
+          <h2><%= t("layouts.header.stats").html_safe %></h2>
+          <div class="banner-pw3l">
+            <p><%= t("layouts.header.content").html_safe %></p>
+          </div>
+          <div class="w3lsmore">
+            <%= link_to( t("layouts.header.read"), about_path, class: "button-pipaluk button--inverted") %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

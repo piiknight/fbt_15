@@ -1,3 +1,37 @@
 en:
+  base_title: "Framgia Booking Tours"
   hello: "Hello world"
-  title: "BookingTour"
+  static_pages:
+    home:
+      title: "Home"
+      hot: "HOT Tours"
+    about:
+      title: "About"
+      h1: "About us"
+      p1: "Hello, world."
+      h2: "ARE YOU READY TO MAKE IT AWESOME WITH US?"
+      p2: "Travel the world with one of the most experienced travel
+        agencies in the area. Our Agency brings to its clients over
+        50 years of combined travel expertise."
+    tours:
+      title: "Tours"
+      cat: "CATALOGUE"
+    login:
+      title: "Log in"
+  layouts:
+    footer:
+      links: "Quick Links"
+      info: "Useful Info"
+      phone: "84-24-3795-5417"
+      address: "6F, Vinh Trung Plaza, 255~257 Hung Vuong Str.,
+        Vinh Trung ward, Thanh Khe district, Da Nang"
+      email: "example@gmail.com"
+      words: "Few Words"
+      slogan1: "Travel to live, Live to travel"
+      slogan2: "Someday I’M gonna travel the world"
+      foot: "© 2018 Framgia Booking Tour. All rights reserved"
+    header:
+      stats: "Never Stop Exploring"
+      content: "Start your destiny here . . "
+      read: "Read More"
+
