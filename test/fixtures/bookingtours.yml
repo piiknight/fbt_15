@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tours: one
+  users: 
+  price: 1.5
+  place_from: MyString
+  place_to: MyString
+  quantity: 
+  state: MyString
+
+two:
+  tours: two
+  users: 
+  price: 1.5
+  place_from: MyString
+  place_to: MyString
+  quantity: 
+  state: MyString
