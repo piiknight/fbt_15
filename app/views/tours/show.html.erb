@@ -1,0 +1,39 @@
+<div class="main_detail">
+  <div class="container">
+    <div class="row">
+      <div class="detail_left col-md-4">
+        <%= image_tag @tour.image, class: "img-detail" %>
+      </div>
+      <div class="detail_right col-md-8">
+        <div class="tour_item">
+          <div class="tour_info">
+            <p class="name_tour"><%= @tour.name %></p>
+            <p>
+              <span><%= t "static_pages.tours.p_address" %></span>
+              <%= @tour.address %>
+            </p>
+            <p>
+              <span><%= t "static_pages.tours.p_time_from" %></span>
+              <%= @tour.time_from %>
+            </p>
+            <p>
+              <span><%= t "static_pages.tours.p_time_to" %></span>
+              <%= @tour.time_to %>
+            </p>
+            <p><%= @tour.tour_info %></p>
+            <hr>
+            <p class="price"><%= number_to_currency(@tour.price,
+              unit: t("static_pages.tours.price"), format: "%n %u") %></p>
+            <div class="btn-detail">
+              <%= link_to t("static_pages.tours.btn_booking"), "#" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row invole">
+      <h4><%= t "tour_invole" %></h4>
+      <%= render @tours_involve if @tours_involve.size > 0 %>
+    </div>
+  </div>
+</div>

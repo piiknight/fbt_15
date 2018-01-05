@@ -44,7 +44,7 @@ body a:hover,body a:focus{
 }
 /*-- banner --*/
 .agileits-banner {
-  background:url(fg.jpg)no-repeat center 0px;
+  background:url(bg1.jpeg);
   height: 600px;
   width: auto;
   -webkit-background-size:cover;
@@ -2032,6 +2032,7 @@ input {
 /* body */
 .body-content {
   padding: 3em;
+  background: #f7f7f7;
 }
 .my-btn-primary {
   color: #fff;

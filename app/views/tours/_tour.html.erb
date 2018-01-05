@@ -21,7 +21,7 @@
       <p class="price"><%= number_to_currency(tour.price,
         unit: t("static_pages.tours.price"), format: "%n %u") %></p>
       <div class="btn-detail">
-        <%= link_to t("static_pages.tours.btn_detail"), "#" %>
+        <%= link_to t("static_pages.tours.btn_detail"), tour_path(tour) %>
       </div>
     </div>
   </div>

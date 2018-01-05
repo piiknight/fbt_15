@@ -23,8 +23,9 @@ en:
         50 years of combined travel expertise."
     tours:
       title: "Tours"
-      cat: "CATALOGUE"
+      cat: "ALL TOURS"
       btn_detail: "Detail"
+      btn_booking: "Booking Tour"
       p_address: "Address: "
       p_time_from: "Time start: "
       p_time_to: "Time end: "
@@ -49,6 +50,9 @@ en:
       read: "Read More"
 
   title: "BookingTour"
+  tour_invole: "Tour Involve"
   form:
     btn_search: "Search"
     place_holder: "Search tour"
+  flash:
+    tour_not_found: "Tour not found!"

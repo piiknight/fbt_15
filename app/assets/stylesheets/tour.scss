@@ -6,7 +6,7 @@ $brown: #483837;
 $blue_pale: #9fbdb2;
 $green: blue;
 $red_pale: #c75757;
-.col-md-4 {
+.col-md-4, .col-md-8 {
   padding: 10px;
   .tour_item {
     box-shadow: 1px 1px 1px 1px $grey_pale;
@@ -25,18 +25,18 @@ $red_pale: #c75757;
     }
     .tour_info {
       width: 100%;
-      height: 300px;
+      height: 360px;
       padding: 30px;
       background: url(image_tour);
       background-size: cover;
       .btn-detail {
-        width: 70px;
         height: 40px;
         background: $pink_pale;
         line-height: 40px;
         text-align: center;
         float: right;
         transition: 0.4s;
+        padding: 0px 20px;
         a {
           color: $brown;
         }
@@ -62,5 +62,30 @@ $red_pale: #c75757;
         font-size: 1.2em;
       }
     }
+  }
+  .img-detail {
+    width: 100%;
+    height: 350px;
+    border-radius: 22px;
+    border: 2px solid #ffc7c0;
+  }
+}
+.detail_right {
+  margin-top: 12px;
+  padding: 10px 20px;
+  height: 380px;
+  background: #ffc9c9;
+}
+.invole {
+  h4 {
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    background: #f8c6c0;
+    width: 31%;
+    margin-left: 13px;
+    border-radius: 6px;
+    padding-left: 10px;
+    color: red;
   }
 }

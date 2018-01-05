@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/about", to: "static_pages#about"
   get "/tours", to: "static_pages#tours"
   resources :users, only: %i(show new creat)
+  resources :tours, only: :show
 end
