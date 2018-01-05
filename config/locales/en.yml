@@ -40,3 +40,7 @@ en:
       content: "Start your destiny here . . "
       read: "Read More"
 
+  title: "BookingTour"
+  form:
+    btn_search: "Search"
+    place_holder: "Search tour"

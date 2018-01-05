@@ -3,11 +3,12 @@ class Tour < ApplicationRecord
   has_many :booking_tours, dependent: :destroy
   has_many :reviews, dependent: :destroy
 
-  validates :name, presence: true
   validates :address, presence: true
+  validates :name, presence: true
   validates :price, presence: true
   validates :time_from, presence: true
   validates :time_to, presence: true
 
   scope :order_desc, ->{order created_at: :DESC}
+  scope :search_tour, ->(search){where("name like ?", "%#{search}%")}
 end
