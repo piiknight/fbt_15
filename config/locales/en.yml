@@ -1,4 +1,12 @@
 en:
+  error_sign_up: "User not found"
+  shared:
+    error_content: "The form contains %{count_error} ."
+  signup:
+    title: "Sign up"
+    success: "Welcome to the Framgia Booking Tours!"
+    creat: "Create my account"
+    confirm: "Confirmation"
   base_title: "Framgia Booking Tours"
   hello: "Hello world"
   static_pages:
