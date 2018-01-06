@@ -11,4 +11,5 @@ class Tour < ApplicationRecord
 
   scope :order_desc, ->{order created_at: :DESC}
   scope :search_tour, ->(search){where("name like ?", "%#{search}%")}
+  scope :of_type, ->(category_id){where("category_id = ?", category_id)}
 end
