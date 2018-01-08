@@ -1,5 +1,20 @@
 en:
+  login:
+    title: "Log in"
+    h1: "Log in"
+    submit: "Log in"
+    new: "Sign up now!"
+    remember: "Remember me on this computer"
+    new_user: "New user? %{link_new}"
+  user:
+    profile: "Profile"
+    settings: "Settings"
+    history: "History Booking"
+    reviews: "Manage Reviews"
+    logout: "Log out"
+    login: "Log in"
   error_sign_up: "User not found"
+  error_creat: "Invalid email/password combination"
   shared:
     error_content: "The form contains %{count_error} ."
   signup:
@@ -48,6 +63,8 @@ en:
       stats: "Never Stop Exploring"
       content: "Start your destiny here . . "
       read: "Read More"
+      account: "Account"
+  title: "BookingTour"
   tour_invole: "Tour Involve"
   flash:
     tour_not_found: "Tour not found!"
