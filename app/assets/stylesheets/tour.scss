@@ -8,73 +8,80 @@ $green: blue;
 $red_pale: #c75757;
 .col-md-4, .col-md-8 {
   padding: 10px;
-  .tour_item {
-    box-shadow: 1px 1px 1px 1px $grey_pale;
-    height: auto;
-    border: 1px solid $grey_shadow;
-    .image {
-      overflow: hidden;
-      .tour_img {
-        width:100%;
-        height: 200px;
-        transition: 0.5s;
-      }
-    }
-    img:hover{
-      transform: scale(1.1);
-    }
-    .tour_info {
+}
+.tour_item {
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 1px 1px 1px 1px $grey_pale;
+  height: auto;
+  border: 1px solid #c3c3a2;
+  .image {
+    overflow: hidden;
+    .tour_img {
       width: 100%;
-      height: 360px;
-      padding: 30px;
-      background: url(image_tour);
-      background-size: cover;
-      .btn-detail {
-        height: 40px;
-        background: $pink_pale;
-        line-height: 40px;
-        text-align: center;
-        float: right;
-        transition: 0.4s;
-        padding: 0px 20px;
-        a {
-          color: $brown;
-        }
-      }
-      .btn-detail:hover {
-        background: $blue_pale;
-      }
-      span {
-        font-weight: bold;
-        color: $red_pale;
-      }
-      .name_tour {
-        font-size: 1.5em;
-        font-weight: bold;
-        color: $green;
-      }
-      hr {
-        border: 1px dotted $pink_pale;
-        margin: 14px 0px;
-      }
-      .price {
-        color: red;
-        font-size: 1.2em;
-      }
+      height: 200px;
+      transition: 0.5s;
     }
   }
-  .img-detail {
-    width: 100%;
-    height: 350px;
-    border-radius: 22px;
-    border: 2px solid #ffc7c0;
+  img:hover{
+    transform: scale(1.1);
   }
 }
+.tour_info {
+  width: 100%;
+  padding: 30px 30px 0px 30px;
+  background: url(image_tour);
+  background-size: cover;
+  border: 10px solid #ffc7c0;
+  border-radius: 10px;
+  .btn-detail {
+    height: 40px;
+    background: $pink_pale;
+    line-height: 40px;
+    text-align: center;
+    float: right;
+    transition: 0.4s;
+    padding: 0px 20px;
+    margin-right: 20px;
+    a {
+      color: $brown;
+    }
+  }
+  .btn-detail:hover {
+    background: $blue_pale;
+  }
+  span {
+    font-weight: bold;
+    color: $red_pale;
+  }
+  .name_tour {
+    font-size: 25px;
+    font-weight: bold;
+    color: $green;
+  }
+  hr {
+    border: 1px dotted $pink_pale;
+    margin: 14px 0px;
+  }
+  .price {
+    color: red;
+    font-size: 20px;
+  }
+}
+.img-detail {
+  width: 100%;
+  height: 350px;
+  border-radius: 22px;
+  border: 2px solid #ffc7c0;
+}
 .detail_right {
-  margin-top: 12px;
-  padding: 10px 20px;
-  height: 380px;
-  background: #ffc9c9;
+  width: 60%;
+  float: right;
+  margin-right: 50px;
+}
+.detail_left {
+  float: left;
+  width: 30%;
 }
 .invole {
   h4 {
@@ -88,4 +95,37 @@ $red_pale: #c75757;
     padding-left: 10px;
     color: red;
   }
+}
+.form-booking {
+  width: 150px;
+  float: right;
+  margin-right: 50px;
+  background-color: #FF6B6C;
+  padding: 10px;
+  border-radius: 5px;
+}
+.display {
+  display: block;
+}
+.select_quantity label {
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
+  padding: 10px 0;
+}
+.select_quantity select {
+  height: 30px;
+  color: #800060;
+  background-color: #ffc7c0;
+  border-radius: 5px;
+}
+.finish_select {
+  height: 30px;
+  color: black;
+  background-color: #ffc7c0;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.finish_select:hover {
+  background-color: #800060;
 }

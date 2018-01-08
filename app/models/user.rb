@@ -4,6 +4,7 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
   has_many :reviews, dependent: :destroy
+  has_many :tours, through: :bookingtours
   mount_uploader :avatar, AvatarUploader
 
   before_save{email.downcase!}

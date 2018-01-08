@@ -1,0 +1,58 @@
+<% provide :title, @bookingtour.tour.name %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h1 class="panel-title"><%= @bookingtour.name %></h1>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3 col-lg-3" align="center">
+              <%= image_tag(@bookingtour.image, class: "avatar_default-size") %>
+            </div>
+            <div class="col-md-9 col-lg-9">
+              <table class="table table-user-information">
+                <tbody>
+                  <tr>
+                    <td><%= t "booking_tour.destination" %></td>
+                    <td><%= @bookingtour.address %></td>
+                  </tr>
+                  <tr>
+                    <td><%= t "booking_tour.price" %></td>
+                    <td class="price"><%= number_to_currency(
+                      @bookingtour.price,
+                      unit: t("static_pages.tours.price"),
+                      format: "%n %u")
+                      %></td>
+                  </tr>
+                  <tr>
+                    <td><%= t "booking_tour.quantity" %></td>
+                    <td><%= @bookingtour.quantity %></td>
+                  </tr>
+                  <tr>
+                    <td><%= t "booking_tour.total" %></td>
+                    <td class="price"><%= number_to_currency(
+                      total_price(@bookingtour),
+                      unit: t("static_pages.tours.price"),
+                      format: "%n %u") %></td>
+                  </tr>
+                  <tr>
+                    <td><%= t "Tour information.infor" %></td>
+                    <td><%= @bookingtour.tour_info %></td>
+                  </tr>
+                  <tr>
+                    <td><%= t "booking_tour.state" %></td>
+                    <td><%= @bookingtour.state %></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

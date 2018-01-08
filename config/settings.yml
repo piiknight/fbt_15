@@ -15,3 +15,5 @@ tour:
 category:
   address_length_max: 200
 stt: 0
+Bookingtour:
+  quantity: 20

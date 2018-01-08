@@ -1,10 +1,10 @@
 <div class="main_detail">
   <div class="container">
     <div class="row">
-      <div class="detail_left col-md-4">
+      <div class="detail_left">
         <%= image_tag @tour.image, class: "img-detail" %>
       </div>
-      <div class="detail_right col-md-8">
+      <div class="detail_right">
         <div class="tour_item">
           <div class="tour_info">
             <p class="name_tour"><%= @tour.name %></p>
@@ -24,11 +24,29 @@
             <hr>
             <p class="price"><%= number_to_currency(@tour.price,
               unit: t("static_pages.tours.price"), format: "%n %u") %></p>
-            <div class="btn-detail">
-              <%= link_to t("static_pages.tours.btn_booking"), "#" %>
-            </div>
+            <%= button_tag class: "btn-detail btn-primary", data: {toggle: "collapse", target: "#demo"} do %>
+              <%= t "static_pages.tours.btn_booking" %>
+            <% end %>
+            <div class="clearfix"></div>
           </div>
         </div>
+      <div class="clearfix"></div>
+      <div>
+        <div id="demo" class="collapse">
+          <div class="form-booking">
+            <%= form_for @tour.bookingtours.build, url: bookingtours_path do |f| %>
+              <%= hidden_field_tag :tour_id, @tour.id %>
+              <div class="select_quantity">
+                <%= content_tag :label, t("booking_tour.quantity") %>
+                <%= f.select :quantity,options_for_select(select_quantity_values) %>
+              </div>
+              <%= f.submit t("booking_tour.finish"), class: "finish_select"
+                %>
+              <div class="clearfix"></div>
+            <% end %>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
     <div class="row invole">
