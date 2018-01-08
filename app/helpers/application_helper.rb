@@ -13,4 +13,8 @@ module ApplicationHelper
     @stt += 1
     page_index.to_i.zero? ? 1 + stt : 1 + (page_index.to_i - 1) * per_age + stt
   end
+
+  def avatar_default img
+    img.nil? ? "default.png" : img
+  end
 end

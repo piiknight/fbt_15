@@ -4,6 +4,7 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
   has_many :reviews, dependent: :destroy
+  mount_uploader :avatar, AvatarUploader
 
   before_save{email.downcase!}
   has_secure_password
@@ -20,7 +21,8 @@ class User < ApplicationRecord
   validates :address, presence: true,
     length: {minimum: Settings.User.address_length_min}
   validates :password, presence: true,
-    length: {minimum: Settings.User.password_length_min}
+    length: {minimum: Settings.User.password_length_min}, allow_nil: true
+  validate :avatar_size
 
   def self.digest string
     cost = BCrypt::Engine.cost
@@ -44,5 +46,11 @@ class User < ApplicationRecord
 
   def forget
     update_attribute :remember_digest, nil
+  end
+
+  private
+
+  def avatar_size
+    errors.add(:avatar, t("edit.size_avatar")) if avatar.size > Settings.max_size_img.megabytes
   end
 end

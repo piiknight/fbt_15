@@ -1101,7 +1101,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #660033;
   text-decoration: none;
 }
 a:hover,
@@ -3090,8 +3090,9 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #ff6b6b;
+  border-color: #800000;
+  margin-top: 15px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -5332,6 +5333,7 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 0;
   font-size: 16px;
   color: inherit;
+  text-align: center;
 }
 .panel-title > a,
 .panel-title > small,
@@ -5593,12 +5595,12 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #d6e9c6;
 }
 .panel-info {
-  border-color: #bce8f1;
+  border-color: #ff6b6b;
 }
 .panel-info > .panel-heading {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  color: white;
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #bce8f1;

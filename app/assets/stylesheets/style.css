@@ -2018,14 +2018,14 @@ h3.title-w3l-2 {
   text-align: center;
 }
 input, textarea, select, .uneditable-input {
-  border: 1px solid #ff6b6b;
+  border: 1px solid #ccc;
   border-radius: 3px;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
 }
 
-input {
+.my-input {
   height: 35px;
 }
 
@@ -2069,4 +2069,75 @@ input {
   width: auto;
   margin-left: 0;
   margin-top: -6px;
+}
+
+.user-row {
+  margin-bottom: 14px;
+}
+
+.user-row:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-user {
+  margin: 13px 0;
+  padding: 5px;
+  height: 100%;
+}
+
+.dropdown-user:hover {
+  cursor: pointer;
+}
+
+.table-user-information > tbody > tr {
+  border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information > tbody > tr:first-child {
+  border-top: 0;
+}
+
+.table-user-information > tbody > tr > td {
+  border-top: 0;
+}
+
+.toppad {
+  margin-top:20px;
+}
+
+.change-avatar-form {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.change-avatar-form img {
+  display: block;
+  margin: 0px auto;
+}
+
+.change-avatar-form input {
+  width: 45%;
+  margin: 0px auto;
+}
+
+.link-to-page {
+  width: 30%;
+  float: right;
+}
+
+.my-link-to {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.avatar_default-size {
+  width: 120px;
+  height: 85px;
+}
+
+.content_hidden {
+  display: none;
 }
