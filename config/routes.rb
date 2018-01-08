@@ -7,4 +7,9 @@ Rails.application.routes.draw do
   get "/tours", to: "static_pages#tours"
   resources :users, only: %i(show new creat)
   resources :tours, only: :show
+
+  namespace :admin do
+    resources :tours, only: :index
+    root "tours#index"
+  end
 end

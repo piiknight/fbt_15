@@ -48,11 +48,19 @@ en:
       stats: "Never Stop Exploring"
       content: "Start your destiny here . . "
       read: "Read More"
-
-  title: "BookingTour"
   tour_invole: "Tour Involve"
+  flash:
+    tour_not_found: "Tour not found!"
+  title: "Booking Tour"
   form:
     btn_search: "Search"
     place_holder: "Search tour"
-  flash:
-    tour_not_found: "Tour not found!"
+  admin:
+    menu:
+      title_muser: "Table User"
+      title_mbooking_tour: "Table Booking Tours"
+      title_mtour: "Table Tours"
+      info_user:
+        name: "Name User"
+        title_logout: "Log out"
+        account: "My Account"
