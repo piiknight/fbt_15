@@ -72,6 +72,8 @@
 }
 .imguser img{
   width: 70%;
+  background: #70b9cc;
+  border-radius: 32px;
 }
 .action .foot {
   width: 80%;
@@ -111,30 +113,30 @@
 }
 
 .action {
-  width: 80%;
+  width: 84%;
   float: left;
-  height: 750px;
+  height: 892px;
   padding: 30px;
   background: #f3f7e6de;
 }
 
 .menu {
-  width: 20%;
+  width: 16%;
   float: left;
-  height: 750px;
+  height: 892px;
   background: #293f54;
 }
 .header {
   height: 50px;
 }
 .header .header_left {
-  width: 20%;
+  width: 16%;
   float: left;
   border-right: 1px solid #e8e8e8;
   padding: 0px;
   background: #f5f8e9;
   color: #00a4ce;
-  text-transform: uppercase;x;
+  text-transform: uppercase;
 }
 .header_left .booking_img {
   width: 20%;
@@ -146,12 +148,52 @@
   float: left;
   padding-left: 20px;
   line-height: 29px;
+  text-shadow: 2px -2px 1px #3c0b52;
+  font-family: cursive;
 }
 .header .header_right {
-  width: 80%;
+  width: 84%;
   float: left;
   height: 50px;
 }
+
 form.navbar-form.navbar-left {
   margin-top: 0px;
+}
+.pagining {
+  width: 60%;
+  margin: 20px auto;
+}
+table.table.table-hover thead tr td {
+  color: #47acd2;
+  font-weight: bold;
+}
+.form_creat {
+  width: 50%;
+  padding: 20px 30px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+.form_creat form label {
+  margin-top: 10px;
+}
+.form_create h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #293f54;
+}
+.create {
+  margin-top: 10px;
+}
+.alert_mess {
+  width: 900px;
+  margin: 0px auto;
+}
+.btn-info {
+  text-transform: uppercase;
+  padding: 8px 20px;
+  float: right;
+}
+.img-thumbnail {
+  height: 100px !important;
 }

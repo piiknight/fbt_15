@@ -1,16 +1,24 @@
-<div class="main">
-  <div class="action">
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <td></td>
-        </tr>
-      </thead>
-      <tbody>
-          <tr>
-            <td></td>
-          </tr>
-      </tbody>
-      </table>
-  </div>
+<%= link_to "new", new_admin_tour_path, class: "btn btn-info" %>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td><%= t "table.stt" %></td>
+      <td><%= t "table.name" %></td>
+      <td><%= t "table.addess" %></td>
+      <td><%= t "table.price" %></td>
+      <td><%= t "table.time_from" %></td>
+      <td><%= t "table.time_to" %></td>
+      <td><%= t "table.info" %></td>
+      <td><%= t "table.image" %></td>
+      <td><%= t "table.category" %></td>
+      <td colspan="2"><%= t "table.action" %></td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @stt = Settings.stt %>
+    <%= render @tours %>
+  </tbody>
+</table>
+<div class="pagining">
+  <%= paginate @tours, theme: "twitter-bootstrap-4" %>
 </div>

@@ -11,7 +11,6 @@ categories = Category.all
   time_from = Time.zone.now.strftime("%Y-%m-%d")
   time_to = Faker::Time.forward(3, :morning)
   tour_info = Faker::Lorem.paragraph(2)
-  image = "tour_item.jpg"
   categories.each {|c| c.tours.create!(name: name, address: address, price: price,
-    time_from: time_from, time_to: time_to, tour_info: tour_info, image: image)}
+    time_from: time_from, time_to: time_to, tour_info: tour_info)}
 end

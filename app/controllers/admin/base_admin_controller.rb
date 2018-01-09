@@ -1,5 +1,3 @@
-module Admin
-  class BaseAdminController < ApplicationController
-    layout "application_admin"
-  end
+class Admin::BaseAdminController < ApplicationController
+  layout "application_admin"
 end
