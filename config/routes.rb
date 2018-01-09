@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :tours, except: :show
+    resources :categories, except: :show
     root "tours#index"
   end
 end

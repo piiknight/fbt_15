@@ -1,0 +1,17 @@
+<%= link_to t("admin.category.form.btn_new"), new_admin_category_path, class: "btn btn-info" %>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td><%= t "table.stt" %></td>
+      <td><%= t "table.address" %></td>
+      <td colspan="2"><%= t "table.action" %></td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @stt = Settings.stt %>
+    <%= render @categories %>
+  </tbody>
+</table>
+<div class="pagining">
+  <%= paginate @categories, theme: "twitter-bootstrap-4" %>
+</div>

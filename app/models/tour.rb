@@ -11,7 +11,6 @@ class Tour < ApplicationRecord
   validates :time_to, presence: true
   validate :image_size
 
-  scope :order_desc, ->{order created_at: :DESC}
   scope :search_tour, ->(search){where("name like ?", "%#{search}%")}
   scope :of_type, ->(category_id){where("category_id = ?", category_id)}
 

@@ -1,0 +1,7 @@
+<tr>
+  <td><%= increase_stt(params[:page], Settings.per_page, @stt) %></td>
+  <td><%= category.address %></td>
+  <td><%= link_to t("admin.tour.edit"), edit_admin_category_path(category) %></td>
+  <td><%= link_to t("admin.tour.delete"), admin_category_path(category),
+    method: :delete, data:{confirm: t("admin.tour.confirm_dele")} %></td>
+</tr>

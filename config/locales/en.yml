@@ -66,18 +66,60 @@ en:
       account: "Account"
   title: "BookingTour"
   tour_invole: "Tour Involve"
-  flash:
-    tour_not_found: "Tour not found!"
   title: "Booking Tour"
   form:
     btn_search: "Search"
     place_holder: "Search tour"
+    prompt: "Select a category"
   admin:
     menu:
       title_muser: "Table User"
       title_mbooking_tour: "Table Booking Tours"
       title_mtour: "Table Tours"
+      title_mcategory: "Table Category"
       info_user:
         name: "Name User"
         title_logout: "Log out"
         account: "My Account"
+    tour:
+      delete: "delete"
+      edit: "edit"
+      error_image_length: "Image's size should be less than 5M"
+      form:
+        h4_title_new: "Create new Tour"
+        h4_title_edit: "Edit Tour"
+        btn_new: "New Tour"
+      confirm_dele: "Are you sure?"
+    category:
+      form:
+        h4_title_new: "Create new Category"
+        h4_title_edit: "Edit Category"
+        btn_new: "New Category"
+  table:
+    stt: "STT"
+    name: "Name"
+    addess: "Address"
+    price: "Price"
+    time_from: "Time From"
+    time_to: "Time To"
+    info: "Info"
+    image: "Image"
+    category: "Category"
+    action: "Action"
+  flash:
+    tour_not_found: "Tour not found!"
+    new_succ: "You created success"
+    fail: "Have a few errors"
+    delete_succ: "You deleted success"
+    update_succ: "Updated success"
+    not_found: "Not found"
+  helpers:
+    label:
+      tour:
+        name: "Name Tour*:"
+        address: "Address of Tour*:"
+        price: "Price*:"
+        time_from: "Departure Time*:"
+        time_to: "End Time*:"
+        info: "Tours Information*:"
+        image: "Pick a tours picture:"
