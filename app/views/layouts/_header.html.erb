@@ -15,7 +15,7 @@
                    <% end %>
                   <ul class="dropdown-menu">
                     <li><%= link_to t("user.profile"), current_user %></li>
-                    <li><%= link_to t("user.settings"), "#" %></li>
+                    <li><%= link_to t("user.settings"), edit_user_path(current_user) %></li>
                     <li><%= link_to t("user.history"), "#" %></li>
                     <li><%= link_to t("user.reviews"), "#" %></li>
                     <li class="divider"></li>

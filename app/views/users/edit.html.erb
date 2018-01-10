@@ -1,9 +1,9 @@
-<% provide :title, t("signup.title") %>
-<h1 class="h1-align"><%= t "signup.title" %></h1>
+<% provide :title, t("edit.title") %>
+<h1 class="h1-align"><%= t "edit.h1" %></h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user, url: signup_path) do |f| %>
+    <%= form_for(@user) do |f| %>
       <%= render "shared/error_messages", object: f.object %>
 
       <%= f.label :name %>
@@ -12,24 +12,26 @@
       <%= f.label :email %>
       <%= f.email_field :email, class: "form-control" %>
 
-      <%= f.label :sdt %>
-      <%= f.phone_field :sdt, class: "form-control" %>
-
       <%= f.label :address %>
       <%= f.text_field :address, class: "form-control" %>
+
+      <%= f.label :sdt %>
+      <%= f.text_field :sdt, class: "form-control" %>
 
       <%= f.label :password %>
       <%= f.password_field :password, class: "form-control" %>
 
-      <%= f.label :password_confirmation, t("signup.confirm") %>
+      <%= f.label :password_confirmation, t("edit.confirm") %>
       <%= f.password_field :password_confirmation, class: "form-control" %>
 
       <div class="change-avatar-form">
         <%= f.label :avatar %>
+        <%= image_tag(avatar_default(@user.avatar.url), class: "avatar_default-size") %>
         <%= f.file_field :avatar, accept: "image/jpeg,image/gif,image/png" %>
       </div>
 
-      <%= f.submit t("signup.creat"), class: "btn my-btn-primary" %>
+      <%= f.submit t("edit.save"), class: "btn btn-primary" %>
+
     <% end %>
   </div>
 </div>

@@ -1,4 +1,14 @@
 en:
+  edit:
+    title: "Edit user"
+    h1: "Update your profile"
+    save: "Save changes"
+    confirm: "Confirmation"
+    size_avatar: "should be less than 5MB"
+  profile:
+    address: "Address:"
+    phone: "Phone:"
+    email: "Email:"
   login:
     title: "Log in"
     h1: "Log in"
@@ -6,6 +16,7 @@ en:
     new: "Sign up now!"
     remember: "Remember me on this computer"
     new_user: "New user? %{link_new}"
+    please: "Please log in."
   user:
     profile: "Profile"
     settings: "Settings"
@@ -13,7 +24,9 @@ en:
     reviews: "Manage Reviews"
     logout: "Log out"
     login: "Log in"
+    update: "Profile updated"
   error_sign_up: "User not found"
+  success_creat: "Welcome to Framgia Booking Tours"
   error_creat: "Invalid email/password combination"
   shared:
     error_content: "The form contains %{count_error} ."
