@@ -1,0 +1,35 @@
+<%= link_to t("admin.user.form.btn_new"), new_admin_user_path, class: "btn btn-info" %>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td><%= t "table.stt" %></td>
+      <td><%= t "table.name" %></td>
+      <td><%= t "table.addess" %></td>
+      <td><%= t "table.phone" %></td>
+      <td><%= t "table.email" %></td>
+      <td><%= t "table.role" %></td>
+      <td><%= t "table.avatar" %></td>
+      <td colspan="2"><%= t "table.action" %></td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each_with_index do |v, i| %>
+      <tr>
+        <% @stt ||= i %>
+        <td><%= increase_stt params[:page], Settings.per_page, @stt  %></td>
+        <td><%= v.name %></td>
+        <td><%= v.address %></td>
+        <td><%= v.sdt %></td>
+        <td><%= v.email %></td>
+        <td><%= conver_role v.role %></td>
+        <td><%= image_tag v.avatar, class: "img-thumbnail" %></td>
+        <td><%= link_to t("admin.tour.edit"), edit_admin_user_path(v) %></td>
+        <td><%= link_to t("admin.delete.delete"), admin_user_path(v), method: :delete,
+          data:{confirm: t("admin.tour.confirm_dele")} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<div class="pagining">
+  <%= paginate @users, theme: "twitter-bootstrap-4" %>
+</div>

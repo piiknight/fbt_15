@@ -108,6 +108,15 @@ en:
         h4_title_new: "Create new Category"
         h4_title_edit: "Edit Category"
         btn_new: "New Category"
+      confirm_dele: "Are you sure?"
+    user:
+      form:
+        h4_title_new: "New User"
+        h4_title_edit: "Edit User"
+        btn_edit: "Edit User"
+        btn_new: "New User"
+        radio_true: "Yes"
+        radio_false: "No"
   table:
     stt: "STT"
     name: "Name"
@@ -119,6 +128,9 @@ en:
     image: "Image"
     category: "Category"
     action: "Action"
+    phone: "Phone Number"
+    email: "Email"
+    role: "Role"
   flash:
     tour_not_found: "Tour not found!"
     new_succ: "You created success"
@@ -136,3 +148,5 @@ en:
         time_to: "End Time*:"
         info: "Tours Information*:"
         image: "Pick a tours picture:"
+      user:
+        role: "Admin"

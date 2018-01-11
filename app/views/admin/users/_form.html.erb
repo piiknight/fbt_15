@@ -1,0 +1,26 @@
+<%= form_for [:admin, @user], html: {multipart: true} do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control" %>
+  <%= f.label :email %>
+  <%= f.email_field :email, class: "form-control" %>
+  <%= f.label :sdt %>
+  <%= f.phone_field :sdt, class: "form-control" %>
+  <%= f.label :address %>
+  <%= f.text_field :address, class: "form-control" %>
+  <%= f.label :role %>
+  <div class="btn-radio">
+    <%= f.radio_button :role, true %><br>
+    <%= t("admin.user.form.radio_true") %><br>
+  </div>
+  <div class="btn-radio">
+    <%= f.radio_button :role, false, checked: true %>
+    <%= t("admin.user.form.radio_false") %><br>
+  </div>
+  <%= f.label :password %>
+  <%= f.password_field :password, class: "form-control" %>
+  <%= f.label :password_confirmation, t("signup.confirm") %>
+  <%= f.password_field :password_confirmation, class: "form-control" %>
+  <%= f.file_field :avatar %>
+  <%= f.submit class: "btn my-btn-primary" %>
+<% end %>
