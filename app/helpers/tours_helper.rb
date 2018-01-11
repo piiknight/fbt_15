@@ -6,4 +6,8 @@ module ToursHelper
     end
     arr
   end
+
+  def avg_rating reviews
+    reviews.blank? ? 0 : reviews.average(:rating).round(Settings.review.rating.round)
+  end
 end
