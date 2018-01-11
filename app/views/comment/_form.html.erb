@@ -1,0 +1,10 @@
+<%= form_for [review.tour, review, review.comments.build], remote: true do |f| %>
+  <div class="row">
+    <div class="col-md-12">
+      <%= f.text_field :content, class: "form-control", placeholder: t("form.placeholer_cmt") %>
+    </div>
+    <div class="col-md-12">
+      <%= f.submit t "form.submit", class: "btn btn-success" %>
+    </div>
+  </div>
+<% end %>

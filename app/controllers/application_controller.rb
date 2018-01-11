@@ -15,4 +15,8 @@ class ApplicationController < ActionController::Base
     @user = User.find_by id: params[:id]
     redirect_to(root_url) unless current_user? @user
   end
+
+  def redirect_to_tour_path
+    redirect_to tour_path @tour
+  end
 end

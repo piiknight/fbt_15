@@ -1,0 +1,12 @@
+<% comments.each do |comment| %>
+  <p class="content_comment">
+    <%= image_tag avatar_default(comment.avatar.url),
+      class: "ava_user_cmt", title: comment.name %>
+    <%= comment.content %>
+    <% if current_user? comment.user %>
+      <span class="action_comment" >
+        <%= link_to t("admin.tour.delete"), [@tour, comment.review, comment],
+          method: :delete %></span>
+    <% end %>
+  </p>
+<% end %>

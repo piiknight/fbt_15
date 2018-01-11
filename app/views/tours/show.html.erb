@@ -5,7 +5,7 @@
         <%= image_tag @tour.image, class: "img-detail" %>
         <div class="row">
           <div class="review">
-            <h4><%= t "review.h4_title" %></h4>
+            <h3><%= t "review.h4_title" %></h3>
             <%= link_to t("review.add_review"), new_tour_review_path(@tour), class: "btn-load" %>
             <% if @reviews.count > Settings.review.count.zero %>
               <%= render @reviews %>
