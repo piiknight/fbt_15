@@ -48,7 +48,7 @@
             <%= form_for @tour.bookingtours.build, url: bookingtours_path do |f| %>
               <%= hidden_field_tag :tour_id, @tour.id %>
               <div class="select_quantity">
-                <%= content_tag :label, t("booking_tour.quantity") %>
+                <%= content_tag :label, t("booking_tour.quantity_title") %>
                 <%= f.select :quantity,options_for_select(select_quantity_values) %>
               </div>
               <%= f.submit t("booking_tour.finish"), class: "finish_select"

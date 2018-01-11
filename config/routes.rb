@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   resources :bookingtours, only: %i{show create}
   resources :history_bookings, only: :index
   resources :tours, only: :show do
-    resources :reviews, except: %i(show index)
+    resources :reviews, except: :show
   end
 
   namespace :admin do

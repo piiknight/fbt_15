@@ -3,7 +3,7 @@ class ToursController < ApplicationController
   before_action :find_tour
 
   def show
-    @reviews = Review.load_reviews @tour.id
+    @reviews = Review.load_reviews_by_tour @tour.id
     @avg_rating = avg_rating @reviews
 
     if @tour
