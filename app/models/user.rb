@@ -26,6 +26,8 @@ class User < ApplicationRecord
     length: {minimum: Settings.User.password_length_min}, allow_nil: true
   validate :avatar_size
 
+  scope :admin, ->{where("role = true")}
+
   def self.digest string
     cost = BCrypt::Engine.cost
     cost = BCrypt::Engine::MIN_COST if ActiveModel::SecurePassword.min_cost
@@ -70,6 +72,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.password_reset_expired.hours.ago
+  end
+
+  def is_admin?
+    self.role?
   end
 
   private

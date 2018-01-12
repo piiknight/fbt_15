@@ -19,4 +19,10 @@ class UserMailer < ApplicationMailer
     @user = user
     mail to: @user.email, subject: I18n.t("mailer.subject")
   end
+
+  def cancel_booking_tour user, bookingtour
+    @user = user
+    @bookingtour = bookingtour
+    mail to: @user.email, subject: I18n.t("mailer.subject")
+  end
 end

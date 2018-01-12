@@ -14,7 +14,8 @@
         <p><%= t "booking_tour.updated_at", updated_at: booking_tour.updated_at %></p>
         <%= link_to t("booking_tour.link_tour"), tour_path(booking_tour.tour) %>
         <% if is_considering? booking_tour %>
-          <%= link_to t("booking_tour.btn-cancel"), "#", class: "btn btn-info" %>
+          <%= link_to t("booking_tour.btn-cancel"), bookingtour_path(booking_tour),
+            method: :delete, data:{confirm: t("admin.tour.confirm_dele")}, class: "btn btn-info" %>
         <% end %>
       </div>
     </div>

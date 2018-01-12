@@ -9,6 +9,7 @@
               <li><%= link_to t("static_pages.about.title"), about_path %></li>
               <li><%= link_to t("static_pages.tours.title"), tours_path %></li>
               <% if logged_in? %>
+                <li><%= link_to t("static_pages.admin"), admin_tours_path if current_user.is_admin? %></li>
                 <li class="dropdown">
                    <%= link_to "#", class: "dropdown-toggle", data: {toggle: "dropdown"} do %>
                        <%= t "layouts.header.account" %><b class="caret"></b>

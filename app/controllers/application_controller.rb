@@ -19,4 +19,10 @@ class ApplicationController < ActionController::Base
   def redirect_to_tour_path
     redirect_to tour_path @tour
   end
+
+  def authencation_admin!
+    return if current_user.is_admin?
+    flash[:danger] = I18n.t("role.not_admin")
+    redirect_to root_url
+  end
 end

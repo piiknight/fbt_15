@@ -1,10 +1,10 @@
 <div class="menu">
   <div class="infouser">
     <div class="imguser">
-      <%= image_tag "user-icon.png" %>
+      <%= image_tag current_user.avatar %>
     </div>
     <div class="name_user">
-      <p><%= t "admin.menu.info_user.name" %></p>
+      <p><%= current_user.name %></p>
       <p><%= link_to t("admin.menu.info_user.title_logout"), "#" %></p>
     </div>
   </div>
