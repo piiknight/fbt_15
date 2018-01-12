@@ -4,7 +4,7 @@ class CreateBookingtours < ActiveRecord::Migration[5.1]
       t.references :tour, foreign_key: true
       t.references :user, foreign_key: true
       t.integer :quantity
-      t.string :state, default: "Waiting"
+      t.string :state, default: "considering"
 
       t.timestamps
     end

@@ -162,6 +162,9 @@ en:
         h4_title_new: "Create new Category"
         h4_title_edit: "Edit Category"
         btn_new: "New Category"
+    booking_tour:
+      form:
+        h4_title_edit: "Update state of booking tour"
   table:
     stt: "STT"
     name: "Name"
@@ -173,6 +176,16 @@ en:
     image: "Image"
     category: "Category"
     action: "Action"
+    phone: "Phone Number"
+    email: "Email"
+    role: "Role"
+    name_user: "Name User"
+    name_tour: "Name Tour"
+    quantity: "Quantity"
+    total: "Total"
+    status: "Status"
+    time_booking: "Time Booking"
+    time_booking_update: "Time Update"
   flash:
     tour_not_found: "Tour not found!"
     new_succ: "You created success"
@@ -198,17 +211,19 @@ en:
       user:
         role: "Admin"
   booking_tour:
+    click: "Click here"
+    delete_booking_tour: "Your booking tour deleted, We are realy sory you.
+      And you can booking tour another at here %{link_tour}"
     btn-cancel: "Cancel"
     place_to: "Place to: %{place_to}"
     quantity: "Quantity: %{quantity}"
     quantity_title: "Quantity"
     place_from: "Place of departure: %{place_from}"
-    state: "State of ticket: %{state}"
+    state_his: "State of booking tour: %{state}"
     created_at: "Day of booking: %{created_at}"
     updated_at: "Day of updated booking: %{updated_at}"
     link_tour: "Show tour"
     finish: "Finish"
-    state: "State of booking tour"
     h4_history_booking: "List of your Booking Tours"
   review:
     h4_title: "Reviews"
@@ -219,3 +234,9 @@ en:
     reviews_count: "%{review_count} reviews"
     link_tour: "You reviewed on %{link_tour_name}"
     span_show: "Show comment (%{num_cmt})"
+  mailer:
+    subject: "Feed back booking tour's state"
+    hi: "Hi %{name}"
+    check_booking: "You can checkout your booking tour at here %{link_check_tour}
+      to see detail."
+    link_title: "View changes"

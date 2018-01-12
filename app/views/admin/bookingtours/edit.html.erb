@@ -1,0 +1,9 @@
+<div class="form_creat">
+  <h4><%= t "admin.booking_tour.form.h4_title_edit" %></h4>
+  <%= form_for [:admin, @bookingtour] do |f| %>
+    <%= render "shared/error_messages", object: f.object %>
+    <%= f.label :state %>
+    <%= f.select(:state, select_state_values, prompt: t("form.prompt")) %>
+    <%= f.submit class: "btn btn-info create" %>
+  <% end %>
+</div>

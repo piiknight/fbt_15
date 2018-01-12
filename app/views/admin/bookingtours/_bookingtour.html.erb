@@ -1,0 +1,13 @@
+<tr>
+  <td><%= bookingtour.user_name %></td>
+  <td><%= bookingtour.name %></td>
+  <td><%= bookingtour.price %></td>
+  <td><%= bookingtour.quantity %></td>
+  <td><%= total_price bookingtour %></td>
+  <td><%= bookingtour.state %></td>
+  <td><%= bookingtour.created_at %></td>
+  <td><%= bookingtour.updated_at %></td>
+  <td><%= link_to t("admin.bookingtour.edit"), edit_admin_bookingtour_path(bookingtour) %></td>
+  <td><%= link_to t("admin.bookingtour.delete"), admin_bookingtour_path(bookingtour),
+    method: :delete, data:{confirm: t("admin.tour.confirm_dele")} %></td>
+</tr>

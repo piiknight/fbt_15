@@ -9,7 +9,7 @@
         <h4><%= booking_tour.name %></h4>
         <p><%= t "booking_tour.place_from", place_from: booking_tour.address %></p>
         <p><%= t "booking_tour.quantity", quantity: booking_tour.quantity %></p>
-        <p><%= t "booking_tour.state", state: booking_tour.state %></p>
+        <p><%= t "booking_tour.state_his", state: booking_tour.state %></p>
         <p><%= t "booking_tour.created_at", created_at: booking_tour.created_at %></p>
         <p><%= t "booking_tour.updated_at", updated_at: booking_tour.updated_at %></p>
         <%= link_to t("booking_tour.link_tour"), tour_path(booking_tour.tour) %>

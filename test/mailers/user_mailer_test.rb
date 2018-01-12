@@ -14,6 +14,13 @@ class UserMailerTest < ActionMailer::TestCase
     assert_equal "Password reset", mail.subject
     assert_equal ["to@example.org"], mail.to
     assert_equal ["from@example.com"], mail.from
+  end
+
+  test "feedback_to_user" do
+    mail = UserMailer.feedback_to_user
+    assert_equal "Feedback to user", mail.subject
+    assert_equal [user.email], mail.to
+    assert_equal ["vanquang451@@gmail.com"], mail.from
     assert_match "Hi", mail.body.encoded
   end
 end

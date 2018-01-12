@@ -1,0 +1,21 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td><%= t "table.name_user" %></td>
+      <td><%= t "table.name_tour" %></td>
+      <td><%= t "table.price" %></td>
+      <td><%= t "table.quantity" %></td>
+      <td><%= t "table.total" %></td>
+      <td><%= t "table.status" %></td>
+      <td><%= t "table.time_booking" %></td>
+      <td><%= t "table.time_booking_update" %></td>
+      <td colspan="<%= Settings.table.td.colspan %>"><%= t "table.action" %></td>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @bookingtours if @bookingtours.present? %>
+  </tbody>
+</table>
+<div class="pagining">
+  <%= paginate @bookingtours, theme: "twitter-bootstrap-4" %>
+</div>

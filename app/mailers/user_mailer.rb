@@ -8,4 +8,15 @@ class UserMailer < ApplicationMailer
     @user = user
     mail to: user.email, subject: t("password_reset.subject")
   end
+
+  def feedback_to_user user, bookingtour
+    @user = user
+    @bookingtour = bookingtour
+    mail to: @user.email, subject: I18n.t("mailer.subject")
+  end
+
+  def delete_bookingtour user
+    @user = user
+    mail to: @user.email, subject: I18n.t("mailer.subject")
+  end
 end
