@@ -1,4 +1,15 @@
 en:
+  booking_tour:
+    review: "Your booking is under reviewing"
+    quantity: "How many tickets do you want?"
+    finish: "FINISH"
+    destination: "Destination"
+    price: "Price"
+    quantity: "Quantity"
+    total: "Total Price"
+    infor: "Tour information"
+    state: "State"
+    not_found: "Bookingtour not exits"
   edit:
     title: "Edit user"
     h1: "Update your profile"
@@ -35,6 +46,7 @@ en:
     success: "Welcome to the Framgia Booking Tours!"
     creat: "Create my account"
     confirm: "Confirmation"
+    please: "Please signup!"
   base_title: "Framgia Booking Tours"
   hello: "Hello world"
   static_pages:

@@ -1,7 +1,8 @@
 class Tour < ApplicationRecord
   belongs_to :category
-  has_many :booking_tours, class_name: Bookingtour.name, dependent: :destroy
+  has_many :bookingtours, class_name: Bookingtour.name, dependent: :destroy
   has_many :reviews, dependent: :destroy
+  has_many :users, through: :bookingtours
   mount_uploader :image, PictureUploader
 
   validates :address, presence: true, length: {maximum: Settings.tour.address_length_max}

@@ -1,4 +1,10 @@
 class ToursController < ApplicationController
+  include ToursHelper
+
+  def new
+    @tour = Tour.new
+  end
+
   def show
     @tour = Tour.find_by id: params[:id]
     if @tour

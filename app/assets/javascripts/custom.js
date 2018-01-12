@@ -5,9 +5,4 @@ $( document ).ready(function() {
       alert('Maximum file size is 5MB. Please choose a smaller file.');
     }
   });
-  $('.btn-detail').click
-  $('.btn-detail').on('click', function(event) {
-    event.preventDefault();
-    $('#content_hidden').css('display', 'block');
-  });
 });
