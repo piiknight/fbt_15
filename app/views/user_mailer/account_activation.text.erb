@@ -1,0 +1,5 @@
+<%=  t "acc_activ.h1" %>
+
+<%= t("acc_activ.p1", name: @user.name).html_safe %>
+
+<%= t("acc_activ.text", link_edit: edit_account_activation_url(@user.activation_token, email: @user.email))%>
