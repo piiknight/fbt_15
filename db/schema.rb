@@ -49,15 +49,6 @@ ActiveRecord::Schema.define(version: 20180105151727) do
     t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
-  create_table "ratings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.bigint "tour_id"
-    t.bigint "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["tour_id"], name: "index_ratings_on_tour_id"
-    t.index ["user_id"], name: "index_ratings_on_user_id"
-  end
-
   create_table "reviews", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id"
     t.bigint "tour_id"
@@ -102,8 +93,6 @@ ActiveRecord::Schema.define(version: 20180105151727) do
   add_foreign_key "comments", "users"
   add_foreign_key "likes", "reviews"
   add_foreign_key "likes", "users"
-  add_foreign_key "ratings", "tours"
-  add_foreign_key "ratings", "users"
   add_foreign_key "reviews", "tours"
   add_foreign_key "reviews", "users"
   add_foreign_key "tours", "categories"

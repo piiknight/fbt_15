@@ -150,6 +150,7 @@ en:
     delete_succ: "You deleted success"
     update_succ: "Updated success"
     not_found: "Not found"
+    not_have_booking: "You don't have booking tour at recently"
   helpers:
     label:
       tour:
@@ -162,3 +163,13 @@ en:
         image: "Pick a tours picture:"
       user:
         role: "Admin"
+  booking_tour:
+    btn-cancel: "Cancel"
+    place_to: "Place to: %{place_to}"
+    quantity: "Quantity: %{quantity}"
+    place_from: "Place of departure: %{place_from}"
+    state: "State of ticket: %{state}"
+    created_at: "Day of booking: %{created_at}"
+    updated_at: "Day of updated booking: %{updated_at}"
+    link_tour: "Show tour"
+    h4_history_booking: "List of your Booking Tours"
