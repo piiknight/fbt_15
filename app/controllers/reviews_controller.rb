@@ -1,7 +1,16 @@
 class ReviewsController < ApplicationController
   before_action :logged_in_user
-  before_action :find_tour
-  before_action :find_review, except: %i(new create)
+  before_action :set_history, only: %i(edit destroy)
+  before_action :find_tour, except: :index
+  before_action :find_review, except: %i(index new create)
+
+  def index
+    @user = current_user
+    @reviews = Review.load_reviews_by_user @user.id
+    return if @reviews.present?
+    flash[:info] = I18n.t("flash.empty_review")
+    redirect_to root_url
+  end
 
   def new
     @review = Review.new
@@ -21,9 +30,10 @@ class ReviewsController < ApplicationController
   def edit; end
 
   def update
+    @history = params[:history]
     if @review.update review_params
       flash[:success] = I18n.t("flash.update_review_suc")
-      redirect_to tour_path @tour
+      redirect_to url_old @history
     else
       flash[:danger] = I18n.t("flash.fail")
       render :edit
@@ -36,7 +46,7 @@ class ReviewsController < ApplicationController
     else
       flash[:danger] = I18n.t("flash.fail")
     end
-    redirect_to tour_path @tour
+    redirect_to url_old @history
   end
 
   private
@@ -57,5 +67,13 @@ class ReviewsController < ApplicationController
     return if @review.present?
     flash[:info] = I18n.t("flash.not_found")
     redirect_to tour_path
+  end
+
+  def set_history
+    @history = params[:history]
+  end
+
+  def url_old history
+    history.blank? ? tour_path(@tour) : tour_reviews_path(current_user)
   end
 end

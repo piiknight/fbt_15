@@ -22,8 +22,9 @@ end
   email = Faker::Internet.email
   password = "abcabc"
   role = false
+  activated = true
   User.create!(name: name, address: address, sdt: sdt, email: email, password: password,
-    role: role)
+    role: role, activated: activated)
 end
 
 user = User.first

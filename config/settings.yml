@@ -25,3 +25,6 @@ review:
     zero: 0
   rating:
     round: 2
+url:
+  param:
+    history: "history"

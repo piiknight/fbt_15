@@ -181,6 +181,7 @@ en:
     not_have_booking: "You don't have booking tour at recently"
     add_review_suc: "You added a review successful"
     update_review_suc: "You updated a review successful"
+    empty_review: "You don't have review at recently"
   helpers:
     label:
       tour:
@@ -197,11 +198,14 @@ en:
     btn-cancel: "Cancel"
     place_to: "Place to: %{place_to}"
     quantity: "Quantity: %{quantity}"
+    quantity_title: "Quantity"
     place_from: "Place of departure: %{place_from}"
     state: "State of ticket: %{state}"
     created_at: "Day of booking: %{created_at}"
     updated_at: "Day of updated booking: %{updated_at}"
     link_tour: "Show tour"
+    finish: "Finish"
+    state: "State of booking tour"
     h4_history_booking: "List of your Booking Tours"
   review:
     h4_title: "Reviews"
@@ -210,3 +214,4 @@ en:
     edit: "edit"
     delete: "delete"
     reviews_count: "%{review_count} reviews"
+    link_tour: "You reviewed on %{link_tour_name}"
