@@ -1,0 +1,8 @@
+<div class="item_review">
+  <div class="star-rating" data-score= <%= review.rating %> ></div>
+  <p><%= review.content %></p>
+  <% if current_user? review.user %>
+    <%= link_to t("review.edit"), edit_tour_review_path(review.tour, review), class: "btn-load" %>
+    <%= link_to t("review.delete"), tour_review_path(review.tour, review), method: :delete %>
+  <% end %>
+</div>

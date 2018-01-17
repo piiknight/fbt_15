@@ -160,15 +160,6 @@ en:
         h4_title_new: "Create new Category"
         h4_title_edit: "Edit Category"
         btn_new: "New Category"
-      confirm_dele: "Are you sure?"
-    user:
-      form:
-        h4_title_new: "New User"
-        h4_title_edit: "Edit User"
-        btn_edit: "Edit User"
-        btn_new: "New User"
-        radio_true: "Yes"
-        radio_false: "No"
   table:
     stt: "STT"
     name: "Name"
@@ -180,9 +171,6 @@ en:
     image: "Image"
     category: "Category"
     action: "Action"
-    phone: "Phone Number"
-    email: "Email"
-    role: "Role"
   flash:
     tour_not_found: "Tour not found!"
     new_succ: "You created success"
@@ -191,6 +179,8 @@ en:
     update_succ: "Updated success"
     not_found: "Not found"
     not_have_booking: "You don't have booking tour at recently"
+    add_review_suc: "You added a review successful"
+    update_review_suc: "You updated a review successful"
   helpers:
     label:
       tour:
@@ -213,3 +203,10 @@ en:
     updated_at: "Day of updated booking: %{updated_at}"
     link_tour: "Show tour"
     h4_history_booking: "List of your Booking Tours"
+  review:
+    h4_title: "Reviews"
+    add_review: "Add review"
+    edit_review: "Edit review"
+    edit: "edit"
+    delete: "delete"
+    reviews_count: "%{review_count} reviews"

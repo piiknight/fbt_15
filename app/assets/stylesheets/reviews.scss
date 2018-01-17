@@ -1,0 +1,22 @@
+$grey_light: #f3f3f3;
+.review {
+  padding: 20px;
+  h4 {
+    color: red;
+  }
+  .item_review {
+    margin-top: 10px;
+    border-bottom: 1px dotted grey;
+    p {
+      color: black;
+    }
+  }
+}
+.container {
+  .form-review {
+    width: 60%;
+    margin: 0px auto;
+    background: $grey_light;
+    padding: 20px;
+  }
+}

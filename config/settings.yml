@@ -20,3 +20,8 @@ stt: 0
 Bookingtour:
   quantity: 20
   state_considering: "considering"
+review:
+  count:
+    zero: 0
+  rating:
+    round: 2
