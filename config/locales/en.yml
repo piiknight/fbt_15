@@ -1,4 +1,44 @@
 en:
+  password_reset:
+    text: "To reset your password click the link below:\n\n%{link_edit}.\n\nThis
+      link will expire in two hours.\n\nIf you did not request your password to
+      be reset, please ignore this email and our password will stay as it is."
+    h1: "Password reset"
+    content: "To reset your password click the link below:</br></br>
+      %{link_edit}.</br></br>
+      This link will expire in two hours.</br></br>
+      If you did not request your password to be reset, please ignore this email and
+      our password will stay as it is."
+    info: "Email sent with password reset instructions"
+    forgot: "(Forgot Password)"
+    subject: "Password reset"
+    danger: "Email address not found"
+    danger_load: "Could not found user"
+    danger_expire: "Password reset has expired."
+    cant_empty: "can't be empty"
+    success: "Password has been reset"
+    edit:
+      title: "Reset password"
+      h1: "Reset password"
+      submit: "Update password"
+    new:
+      title: "Forgot password"
+      h1: "Forgot password"
+      submit: "Submit"
+  acc_activ:
+    text: "Welcome to the Framgia Booking Tours!
+      Click on the link below to activate your account:\n\n%{link_edit}."
+    h1: "Framgia Booking Tours"
+    p1: "Hi %{name},"
+    p2: "Welcome to the Framgia Booking Tours! Click on the link below
+     to activate your account:"
+    link: "Activate"
+  active:
+    invalid: "Invalid activation link"
+    actived: "Account activated!"
+    not_actived: "Account not activated. Check your email for the activation link. "
+    check: "Please che11ck your email to activate your account."
+    subject: "Account activation"
   booking_tour:
     review: "Your booking is under reviewing"
     quantity: "How many tickets do you want?"
