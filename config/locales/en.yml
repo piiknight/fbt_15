@@ -112,6 +112,7 @@ en:
       price: "VNĐ"
     login:
       title: "Log in"
+    admin: "Admin"
   layouts:
     footer:
       links: "Quick Links"
@@ -139,6 +140,7 @@ en:
     placeholer_cmt: "Comment here"
     submit: "Submit"
   admin:
+    home: "Home"
     menu:
       title_muser: "Table User"
       title_mbooking_tour: "Table Booking Tours"
@@ -215,6 +217,7 @@ en:
     delete_booking_tour: "Your booking tour deleted, We are realy sory you.
       And you can booking tour another at here %{link_tour}"
     btn-cancel: "Cancel"
+    cancel_booking_tour: "I have a few problem, so I cancel booking tour %{booking_name}"
     place_to: "Place to: %{place_to}"
     quantity: "Quantity: %{quantity}"
     quantity_title: "Quantity"
@@ -240,3 +243,5 @@ en:
     check_booking: "You can checkout your booking tour at here %{link_check_tour}
       to see detail."
     link_title: "View changes"
+  role:
+    not_admin: "You can't access to page admin."

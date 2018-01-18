@@ -32,5 +32,5 @@ tours = Tour.take(2)
 10.times do |t|
   user_id = user.id
   quantity = Faker::Number.number(1)
-  tours.each {|b| Bookingtour.create!(user_id: user_id, tour_id: b.id, quantity: quantity, state: "considering")}
+  tours.each {|b| Bookingtour.create!(user_id: user_id, tour_id: b.id, quantity: quantity, state: "Considering")}
 end
