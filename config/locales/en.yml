@@ -1,4 +1,7 @@
 en:
+  category_tours:
+    please: "Choose Category: "
+    select: "--Select Category--"
   password_reset:
     text: "To reset your password click the link below:\n\n%{link_edit}.\n\nThis
       link will expire in two hours.\n\nIf you did not request your password to

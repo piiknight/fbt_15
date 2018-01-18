@@ -14,6 +14,7 @@ class Tour < ApplicationRecord
 
   scope :search_tour, ->(search){where("name like ?", "%#{search}%")}
   scope :of_type, ->(category_id){where("category_id = ?", category_id)}
+  scope :hot_tour, ->{joins(:bookingtours).group(:tour_id).order("COUNT(bookingtours.id) DESC")}
 
   private
 

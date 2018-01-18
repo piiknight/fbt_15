@@ -4,14 +4,13 @@ Rails.application.routes.draw do
   post "/signup", to: "users#create"
   get "/home", to: "static_pages#home"
   get "/about", to: "static_pages#about"
-  get "/tours", to: "static_pages#tours"
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
   resources :users, except: %i{index destroy}
   resources :account_activations, only: :edit
   resources :password_resets, except: %i{index show destroy}
-  resources :tours, only: :show
+  resources :tours, only: %i{index show}
   resources :bookingtours, only: %i{show create destroy}
   resources :history_bookings, only: :index
   resources :tours, only: :show do

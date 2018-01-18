@@ -27,3 +27,19 @@ document.addEventListener("turbolinks:load", function() {
     scoreName: 'review[rating]'
   });
 });
+
+$(document).on('change', '#categories', function(){
+  var category = $(this).val();
+
+  $.ajax({
+    url: '/tours',
+    method: 'GET',
+    format: 'js',
+    data: {category: category},
+    error: function (xhr, status, error) {
+    },
+    success: function (response) {
+      $('#categories_tours').html(response);
+    }
+  });
+});

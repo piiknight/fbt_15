@@ -1,4 +1,31 @@
-<%= render "search" %>
-<% @tours.each do |tour| %>
-  <p><%= tour.name %></p>
-<% end %>
+<% provide :title, t("static_pages.tours.title") %>
+<div class="container slide_bar">
+  <div class="col-sm-6 col-md-4 pull-right">
+    <%= render "tours/search" %>
+  </div>
+  <div class="clearfix"></div>
+  <div class="search_cat">
+    <div class="search_cat_content">
+      <div class="label_category">
+        <label><%= t "category_tours.please" %></label>
+      </div>
+      <div class="select_category">
+      <%= select_tag :categories,
+        options_from_collection_for_select(Category.all, :id, :address),
+        prompt: t("category_tours.please") %>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<div id="gallery" class="gallery">
+  <div class="container">
+    <h3 class="title-w3-agile"><%= t "static_pages.tours.cat" %></h3>
+    <div id="categories_tours">
+      <div class="row">
+        <%= render @tours %>
+      </div>
+      <%= paginate @tours, theme: "twitter-bootstrap-4" %>
+    </div>
+  </div>
+</div>

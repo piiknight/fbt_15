@@ -145,3 +145,26 @@ $red_pale: #c75757;
 .finish_select:hover {
   background-color: #800060;
 }
+.select_category select {
+  width: 45%;
+  height: 30px;
+  float: left;
+  color: #800060;
+  background-color: #ffc7c0;
+  border-radius: 5px;
+}
+.label_category {
+  width: 50%;
+  float: left;
+  margin: 5px;
+}
+.search_cat {
+  background-color: #ebebe0;
+  height: 50px;
+  border-radius: 8px;
+}
+.search_cat_content {
+  margin-top: 10px;
+  width: 30%;
+  float: right;
+}

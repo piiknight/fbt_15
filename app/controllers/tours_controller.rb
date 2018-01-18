@@ -1,6 +1,17 @@
 class ToursController < ApplicationController
   include ToursHelper
-  before_action :find_tour
+  before_action :find_tour, only: :show
+
+  def index
+    @tours = Tour.all.order_desc.page(params[:page]).per_page(Settings.per_page)
+    @tours = Tour.search_tour(params[:search]).order_desc.page(params[:page]) if params[:search].present?
+    @tours_cat = Tour.of_type(params[:category]) if params[:category].present?
+    return unless request.xhr?
+    respond_to do |format|
+      format.html{render @tours_cat}
+      format.js
+    end
+  end
 
   def show
     @reviews = Review.load_reviews_by_tour @tour.id

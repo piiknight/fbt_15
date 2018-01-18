@@ -7,5 +7,9 @@
 <div id="gallery" class="gallery">
   <div class="container">
     <h3 class="title-w3-agile"><%= t "static_pages.home.hot" %></h3>
+    <div class="row">
+      <%= render @hot_tours %>
+    </div>
+    <%= paginate @hot_tours, theme: "twitter-bootstrap-4" %>
   </div>
 </div>
