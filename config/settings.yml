@@ -1,5 +1,5 @@
 password_reset_expired: 2
-email_default: "dnoe8.rails@gmail.com"
+email_default: "vanquang451@gmail.com"
 per_page: 10
 add_i: 1
 per_page_admin: 5
@@ -19,7 +19,9 @@ category:
 stt: 0
 Bookingtour:
   quantity: 20
-  state_considering: "considering"
+  state_considering: "Considering"
+  state_accept: "Accept"
+  state_reject: "Reject"
 review:
   count:
     zero: 0
@@ -28,3 +30,6 @@ review:
 url:
   param:
     history: "history"
+table:
+  td:
+    colspan: 2

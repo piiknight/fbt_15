@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     resources :tours, except: :show
     resources :categories, except: :show
     resources :users, except: :show
+    resources :bookingtours, except: %i(new create show)
     root "tours#index"
   end
 end

@@ -14,7 +14,7 @@ class BookingtoursController < ApplicationController
     @bookingtour = @tour.bookingtours.build bookingtour_params
     @bookingtour.user_id = current_user.id unless current_user.nil?
     if @bookingtour.save
-      flash[:success] = t "booking_tour.review"
+      flash[:success] = I18n.t("booking_tour.review")
       redirect_to @bookingtour
     else
       flash[:danger] = t "login.please"

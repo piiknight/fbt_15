@@ -15,8 +15,11 @@ ActiveRecord::Schema.define(version: 20180115081309) do
   create_table "bookingtours", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "tour_id"
     t.bigint "user_id"
+    t.float "price", limit: 24
+    t.string "place_from"
+    t.string "place_to"
     t.integer "quantity"
-    t.string "state", default: "Waiting"
+    t.string "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["tour_id"], name: "index_bookingtours_on_tour_id"
