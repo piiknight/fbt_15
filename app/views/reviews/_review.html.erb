@@ -1,6 +1,26 @@
 <div class="item_review">
   <div class="star-rating" data-score= <%= review.rating %> ></div>
-  <p><%= review.content %></p>
+  <p>
+    <%= image_tag avatar_default(review.avatar.url),
+      class: "ava_user_cmt", title: review.name %>
+    <%= review.content %>
+  </p>
+  <div class="row">
+    <div class="col-md-11 col-md-offset-1">
+      <span data-toggle="collapse" data-target="#show_cmt_<%= review.id %>">
+        <%= t "review.span_show", num_cmt: review.comments.count  %>
+      </span>
+      <div id="show_cmt_<%= review.id %>" class="collapse view_cmt">
+        <% if review.comments.any? %>
+          <%= render "comment/comment", comments: review.comments %>
+        <% end %>
+      </div>
+      <div class="form-comment">
+        <%= render "comment/form", review: review %>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
   <% if current_user? review.user %>
     <%= link_to t("review.edit"), edit_tour_review_path(review.tour, review), class: "btn-load" %>
     <%= link_to t("review.delete"), tour_review_path(review.tour, review), method: :delete %>

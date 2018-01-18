@@ -1,0 +1,2 @@
+$('.view_cmt').html('<%= j render("comment/comment", comments: @review.comments, button_name: t("form.submit")) %>');
+$('.form-comment').html('<%= j render("comment/form", review: @review) %>').appendTo('.form-comment');

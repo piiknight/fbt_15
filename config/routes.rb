@@ -11,11 +11,12 @@ Rails.application.routes.draw do
   resources :users, except: %i{index destroy}
   resources :account_activations, only: :edit
   resources :password_resets, except: %i{index show destroy}
-  resources :tours, only: :show
   resources :bookingtours, only: %i{show create}
   resources :history_bookings, only: :index
   resources :tours, only: :show do
-    resources :reviews, except: :show
+    resources :reviews, except: :show do
+      resources :comments, only: %i(create destroy)
+    end
   end
 
   namespace :admin do

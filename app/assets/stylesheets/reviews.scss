@@ -1,7 +1,7 @@
 $grey_light: #f3f3f3;
 .review {
   padding: 20px;
-  h4 {
+  h3 {
     color: red;
   }
   .item_review {
@@ -9,6 +9,30 @@ $grey_light: #f3f3f3;
     border-bottom: 1px dotted grey;
     p {
       color: black;
+      background: white;
+      border-radius: 9px;
+      margin: 5px 0px;
+      padding-left: 10px;
+      min-height: 40px;
+      line-height:40px;
+      .ava_user_cmt {
+        width: 30px;
+        border-radius: 50%;
+      }
+    }
+    .row {
+      .col-md-11 {
+        .content_comment {
+          .action_comment {
+            width:20px;
+            display: none;
+            transition: 0.4s;
+          }
+        }
+        .content_comment:hover .action_comment {
+          display: block;
+        }
+      }
     }
   }
 }

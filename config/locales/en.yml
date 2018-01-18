@@ -136,6 +136,8 @@ en:
     btn_search: "Search"
     place_holder: "Search tour"
     prompt: "Select a category"
+    placeholer_cmt: "Comment here"
+    submit: "Submit"
   admin:
     menu:
       title_muser: "Table User"
@@ -182,6 +184,7 @@ en:
     add_review_suc: "You added a review successful"
     update_review_suc: "You updated a review successful"
     empty_review: "You don't have review at recently"
+    add_commnet_suc: "You added a commnet"
   helpers:
     label:
       tour:
@@ -215,3 +218,4 @@ en:
     delete: "delete"
     reviews_count: "%{review_count} reviews"
     link_tour: "You reviewed on %{link_tour_name}"
+    span_show: "Show comment (%{num_cmt})"
