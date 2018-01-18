@@ -1,7 +1,7 @@
 <div class="item_review">
   <div class="star-rating" data-score= <%= review.rating %> ></div>
   <p>
-    <%= image_tag avatar_default(review.avatar.url),
+    <%= image_tag avatar_default(review.user_avatar.url),
       class: "ava_user_cmt", title: review.name %>
     <%= review.content %>
   </p>

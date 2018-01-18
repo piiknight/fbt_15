@@ -1,0 +1,49 @@
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <%= t "admin.review.drop_tour" %><b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu tour" role="menu">
+        <% @tours.each do |tour| %>
+          <li class="<%= 'active' if params[:tour_id].to_i == tour.id %>">
+            <%= link_to tour.name, admin_reviews_path(tour_id: tour.id) %>
+          </li>
+        <% end %>
+      </ul>
+    </li>
+  </ul>
+</div>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td><%= t "table.stt" %></td>
+      <td><%= t "table.name_user" %></td>
+      <td><%= t "table.name_tour" %></td>
+      <td><%= t "table.content" %></td>
+      <td><%= t "table.rating" %></td>
+      <td><%= t "table.created_at" %></td>
+      <td><%= t "table.updated_at" %></td>
+      <td colspan="<%= Settings.table.td.colspan %>"><%= t "table.action" %></td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @reviews.each_with_index do |v, i| %>
+      <tr>
+        <% @stt ||= i %>
+        <td><%= increase_stt params[:page], Settings.per_page, @stt  %></td>
+        <td><%= v.user_name %></td>
+        <td><%= v.name %></td>
+        <td><%= v.content %></td>
+        <td><%= v.rating %></td>
+        <td><%= v.created_at %></td>
+        <td><%= v.updated_at %></td>
+        <td><%= link_to t("admin.delete.delete"), admin_review_path(v), method: :delete,
+          data:{confirm: t("admin.tour.confirm_dele")}, class: "btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<div class="pagining">
+  <%= paginate @reviews, theme: "twitter-bootstrap-4" %>
+</div>

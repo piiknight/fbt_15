@@ -4,7 +4,7 @@ class Review < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
   delegate :name, :image, to: :tour, allow_nil: true
-  delegate :name, :avatar, to: :user, allow_nil: true
+  delegate :name, :avatar, to: :user, allow_nil: true, prefix: true
 
   validates :content, presence: true
 

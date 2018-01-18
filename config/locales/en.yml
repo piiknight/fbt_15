@@ -140,8 +140,16 @@ en:
     placeholer_cmt: "Comment here"
     submit: "Submit"
   admin:
+    user:
+      form:
+        radio_true: "True"
+        radio_false: "False"
+    review:
+      all: "All Reviews"
+      drop_tour: "Show review by tour"
     home: "Home"
     menu:
+      title_mreview: "Review of user"
       title_muser: "Table User"
       title_mbooking_tour: "Table Booking Tours"
       title_mtour: "Table Tours"
@@ -150,6 +158,7 @@ en:
         name: "Name User"
         title_logout: "Log out"
         account: "My Account"
+        update: "Update Profile"
     tour:
       delete: "delete"
       edit: "edit"
@@ -168,6 +177,10 @@ en:
       form:
         h4_title_edit: "Update state of booking tour"
   table:
+    created_at: "Created at"
+    updated_at: "Updated at"
+    rating: "Rating"
+    content: "Content"
     stt: "STT"
     name: "Name"
     addess: "Address"
