@@ -25,4 +25,9 @@ class UserMailer < ApplicationMailer
     @bookingtour = bookingtour
     mail to: @user.email, subject: I18n.t("mailer.subject")
   end
+
+  def statistic_per_month users
+    emails = users.collect(&:email).join(",")
+    mail to: emails, subject: I18n.t("mailer.subject_statistic")
+  end
 end

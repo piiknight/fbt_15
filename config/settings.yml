@@ -33,3 +33,5 @@ url:
 table:
   td:
     colspan: 2
+chart:
+  height: 500px
