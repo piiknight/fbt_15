@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20180115081309) do
     t.bigint "tour_id"
     t.bigint "user_id"
     t.integer "quantity"
-    t.string "state", default: "Waiting"
+    t.string "state", default: "considering"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["tour_id"], name: "index_bookingtours_on_tour_id"

@@ -15,6 +15,18 @@ module ApplicationHelper
   end
 
   def avatar_default img
-    img.nil? ? "default.png" : img
+    img.blank? ? "default.png" : img
+  end
+
+  def day_end_of_month? date
+    date == Time.zone.today.end_of_month.day
+  end
+
+  def get_day_current
+    Time.zone.today.day
+  end
+
+  def get_month_current
+    Time.zone.today.month
   end
 end

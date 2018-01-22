@@ -150,6 +150,7 @@ en:
     home: "Home"
     menu:
       title_mreview: "Review of user"
+      title_mstatistic: "Statistic System"
       title_muser: "Table User"
       title_mbooking_tour: "Table Booking Tours"
       title_mtour: "Table Tours"
@@ -251,6 +252,9 @@ en:
     link_tour: "You reviewed on %{link_tour_name}"
     span_show: "Show comment (%{num_cmt})"
   mailer:
+    statistic_p: "We are sent to you statistic abour booking tour of this month.
+      And you can see it here %{link_statistic}"
+    subject_statistic: "Statistic of month currenty"
     subject: "Feed back booking tour's state"
     hi: "Hi %{name}"
     check_booking: "You can checkout your booking tour at here %{link_check_tour}
@@ -258,3 +262,9 @@ en:
     link_title: "View changes"
   role:
     not_admin: "You can't access to page admin."
+  chart:
+    title: "Booking Tour In %{month} - %{year}"
+    yAxis:
+      title: "Number of Booking Tour"
+    xAxis:
+      title: "Day"

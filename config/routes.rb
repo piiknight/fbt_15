@@ -26,6 +26,7 @@ Rails.application.routes.draw do
     resources :users, except: :show
     resources :bookingtours, except: %i(new create show)
     resources :reviews, only: %i(index destroy)
+    resources :statistics, only: :index
     root "tours#index"
   end
 end
